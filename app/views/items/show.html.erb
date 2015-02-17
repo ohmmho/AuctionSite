@@ -8,7 +8,7 @@
 
 
       <%= f.label "Enter your user to bid" %>
-      <%= f.select(:user_id, options_for_select(@users.map { |user| [user.name, user.id] })) %>
+      <%= f.text_field :user_id %>
   
       <%= f.label "€" %>
       <%= f.number_field :amount, placeholder: "99,99" %>
