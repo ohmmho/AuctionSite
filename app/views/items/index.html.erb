@@ -1,0 +1,12 @@
+<p>That's all the stuff we have </p>
+
+<ul >
+  <% @items.each do |item| %>
+    <li>
+      <span><%= link_to(item.name, item_path(item.id)) %></span>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to("Add new Item", new_item_path) %>

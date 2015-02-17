@@ -1,0 +1,11 @@
+<%= form_for @user do |f| %>
+
+
+      <%= f.label :email %>
+      <%= f.email_field :email, placeholder: "example@mail.com" %>
+
+  
+    <%= f.submit 'Sign in' %>
+
+
+<% end %>

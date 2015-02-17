@@ -1,0 +1,10 @@
+<ul>
+  <% @users.each do |user| %>
+  <li>
+    <p><%= user.email %></p>
+  </li>
+  <% end %>
+</ul>
+
+
+<%= link_to("Join now and start biding :D", new_user_path) %>

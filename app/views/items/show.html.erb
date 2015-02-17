@@ -1,0 +1,18 @@
+<h2><%= @item.name %></h2>
+<p><span><%= @item.end_date %></span></p>
+<%= @item.bids %>
+
+
+<%= form_for @bid do |f| %>
+  <%= f.hidden_field :item_id, value: @item.id %>
+
+
+      <%= f.label "Enter your user to bid" %>
+      <%= f.select(:user_id, options_for_select(@users.map { |user| [user.name, user.id] })) %>
+  
+      <%= f.label "€" %>
+      <%= f.number_field :amount, placeholder: "99,99" %>
+
+    <%= f.submit 'Save bid' %>
+
+<% end %>
