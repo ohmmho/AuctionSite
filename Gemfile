@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass', '~> 3.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -40,4 +41,5 @@ gem 'spring',        group: :development
 
 gem 'pry-rails'
 gem 'pry-coolline'
+
 
